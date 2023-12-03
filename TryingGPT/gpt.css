@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed);
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  background-color: black;
+  font-family: "Fira Sans Condensed";
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 0;
+  background: #f9f9f9;
+}
+
+.about,
+.products,
+.contact {
+  padding: 2rem 0;
+}
+
+.about,
+.contact {
+  background: #eee;
+}
+
+/* Animations */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.product {
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.products {
+  padding: 2rem 0;
+  background: #eee;
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+
+.carousel-track {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.product {
+  margin-right: 1rem;
+  flex: 0 0 auto;
+  width: 400px; /* Adjust the width as per your design */
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/*corousel 2*/
+.carousel2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.cards {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 76vh;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.card {
+  width: 85%;
+  height: 76vh;
+  margin: 0 10px;
+  border-radius: 20px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.316);
+  backdrop-filter: blur(10px);
+  transition: all 1.5s ease;
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+
+.card.active {
+  z-index: 1;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.card h2 {
+  position: relative;
+  left: 80%;
+  font-size: 120px;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: rgba(150, 150, 150, 0.7);
+  color: #fff;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.prev {
+  left: 40px;
+}
+
+.next {
+  right: 40px;
+}
+
+/*carousel 2 end*/
