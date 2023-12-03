@@ -120,8 +120,8 @@ nav ul li a {
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.5);
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 2.5rem 3rem;
+  border-radius: 30px;
   cursor: pointer;
   z-index: 1;
 }

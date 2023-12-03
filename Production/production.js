@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const slideWidth = products[0].offsetWidth + 20; // Adjust according to your design
 
   nextBtn.addEventListener("click", function () {
-    if (currentPosition > -(slideWidth * (products.length - 1))) {
+    if (currentPosition > -(slideWidth * (products.length - 4))) {
       currentPosition -= slideWidth;
       track.style.transform = `translateX(${currentPosition}px)`;
     }
