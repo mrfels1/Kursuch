@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed);
+
+body {
+  font-family: "Fira Sans Condensed";
+  margin: 0;
+  background-image: linear-gradient(
+      rgba(0, 204, 255, 0.233),
+      rgba(255, 56, 56, 0.178)
+    ),
+    url("/pages/src/background2k2k.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.content {
+  max-width: 800px;
+  margin: auto;
+}
+
+a,
+a:focus {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  /*
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+    */
+}
+
+/*Header related*/
+
+.header {
+  font-family: "Fira Sans Condensed";
+  background-color: white;
+  /*position: sticky;*/
+  top: 0px;
+  z-index: 3;
+}
+
+header {
+  display: block;
+}
+.header_logo {
+  height: 155px;
+  width: 200px;
+  object-fit: cover;
+}
+.header .container {
+  max-width: 1440px;
+  padding: 0 60px 0 60px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*Menu*/
+.header_menu_wrapper {
+  width: 75%;
+  position: relative;
+}
+
+.header_menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header_menu-nav-link {
+  color: #3e3e3e;
+  font-size: 30px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 39px 0;
+}
+/*Menu END*/
+/*Header related END*/
+
+.main_div {
+  text-align: center;
+  position: relative;
+  left: 100px;
+  height: 200px;
+  width: 500px;
+}
+
+/*Footer related*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 0;
+}
+.footer_bkg {
+  background-color: white;
+}
+.footer .container {
+  max-width: 1440px;
+  padding: 0 60px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.footer_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 43px 0 33px;
+}
+.footer-copyright {
+  max-width: 250px;
+  color: #3e3e3e;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.22;
+  margin: 0 0 8px;
+}
+.footer-contact {
+  font-size: 20px;
+  color: #000000;
+  margin: 0 0 10px;
+}
+.footer-number {
+  font-size: 20px;
+  font-weight: 900;
+}
+.footer-disclaimer-text {
+  font-size: 14px;
+  font-weight: 200;
+  max-width: 250px;
+}
+/*Footer related END*/
+
+/*Main*/
+.title {
+  border: 1px solid rgb(255, 170, 0);
+  background-color: rgb(255, 170, 0);
+  color: white;
+  border-radius: 25px 25px / 25px 25px 25px 25px;
+  font-size: 100px;
+}
+#slogan {
+  border: 1px solid rgb(18, 218, 0);
+  background-color: rgb(18, 218, 0);
+  border-radius: 25px 25px / 25px 25px 25px 25px;
+  padding-left: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  align-items: center;
+}
+.map {
+  position: relative;
+  right: 150px;
+}
+article {
+  margin: 10px 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.article {
+  background-color: aliceblue;
+}
+.section {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(65, 166, 255);
+}
+ul > li {
+  background-color: aliceblue;
+}
+.section + .section {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(181, 220, 255);
+}
+/*Main END*/
+
+/*Task trash*/
+
+.task_abs {
+  position: absolute;
+  top: 0px;
+  height: 150px;
+  object-fit: cover;
+  z-index: 4;
+}
+
+.task_fixd {
+  position: fixed;
+  top: 100px;
+  left: 450px;
+  z-index: 5;
+  font-size: 25px;
+  font-weight: 900;
+}
+/*Task trash END*/
