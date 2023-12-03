@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed);
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+/* Global Styles */
+body {
+  background-color: black;
+  font-family: "Fira Sans Condensed";
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 0;
+  background: #f9f9f9;
+}
+
+.about,
+.products,
+.contact {
+  padding: 2rem 0;
+}
+
+.about,
+.contact {
+  background: #eee;
+}
+
+/* Animations */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.product {
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.products {
+  padding: 2rem 0;
+  background: #eee;
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+
+.carousel-track {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.product {
+  margin-right: 1rem;
+  flex: 0 0 auto;
+  width: 400px; /* Adjust the width as per your design */
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
