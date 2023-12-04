@@ -1,23 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const track = document.querySelector(".carousel-track");
-  const prevBtn = document.querySelector(".carousel-prev");
-  const nextBtn = document.querySelector(".carousel-next");
-  const products = document.querySelectorAll(".product");
+let sliderIndex = 1;
+let timeout;
+const layers = [...document.querySelectorAll(".layer")];
+const covers = [...document.querySelectorAll(".photo-frame")];
 
-  let currentPosition = 0;
-  const slideWidth = products[0].offsetWidth + 20; // Adjust according to your design
-
-  nextBtn.addEventListener("click", function () {
-    if (currentPosition > -(slideWidth * (products.length - 4))) {
-      currentPosition -= slideWidth;
-      track.style.transform = `translateX(${currentPosition}px)`;
-    }
+function changeCoverAnimState(state = 0) {
+  const st = state === 1 ? "running" : "paused";
+  covers.forEach((cover) => {
+    // cover.style['animation-play-state'] = st;
+    cover.querySelector(".cover").style.width = `${state * 100}%`;
   });
+}
 
-  prevBtn.addEventListener("click", function () {
-    if (currentPosition !== 0) {
-      currentPosition += slideWidth;
-      track.style.transform = `translateX(${currentPosition}px)`;
+function switchLayer(step = 1) {
+  const nextSlide =
+    (sliderIndex + step) % 3 === 0 ? 3 : (sliderIndex + step) % 3;
+
+  changeCoverAnimState(1);
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    changeCoverAnimState(0);
+  }, 500);
+
+  for (let i of layers) {
+    i.classList.remove("layer-displayed");
+    i.classList.remove("layer-displayed-exit");
+    if (i.dataset.scene == nextSlide) {
+      i.classList.add("layer-displayed");
     }
-  });
-});
+    if (i.dataset.scene == sliderIndex) {
+      i.classList.add("layer-displayed-exit");
+    }
+  }
+  sliderIndex = nextSlide;
+}

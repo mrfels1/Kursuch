@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem Juice Co.</title>
+    <link rel="stylesheet" href="vacancy.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/index.html#about">О нас</a></li>
+          <li><a href="/Production\production.html">Продукты</a></li>
+          <li><a href="#contact">Прямая связь</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="vacancy-container">
+        <div class="vacancy-grid">
+          <div class="vacancy-grid-element">
+            <h2>Менеджер по продажам</h2>
+            <h1>120 000 - 150 000 ₽</h1>
+            <h3>Опыт от 1 года до 3 лет</h3>
+            <p>
+              Менеджер по продажам – это профессионал, ответственный за
+              привлечение новых клиентов, поддержание и развитие отношений с
+              существующими клиентами, а также достижение поставленных продажных
+              целей и обеспечение увеличения выручки компании.
+            </p>
+            <button onclick="gotoContact()" class="button-cover" role="button">
+              <span class="text">Откликнуться?</span><span>Откликнуться!</span>
+            </button>
+          </div>
+          <div class="vacancy-grid-element">
+            <h2>Младший программист</h2>
+            <h1>50 000 - 75 000 ₽</h1>
+            <h3>Опыт не требуется</h3>
+            <p>
+              Вашей основной задачей будет помощь в разработке и поддержке
+              программного обеспечения под руководством опытных разработчиков.
+              Мы предлагаем возможность получить ценный опыт и знания, работая в
+              дружеской и поддерживающей среде.
+            </p>
+            <button onclick="gotoContact()" class="button-cover" role="button">
+              <span class="text">Откликнуться?</span><span>Откликнуться!</span>
+            </button>
+          </div>
+          <div class="vacancy-grid-element">
+            <h2>Проджект-менеджер</h2>
+            <h1>200 000 - 300 000 ₽</h1>
+            <h3>Опыт от 3 лет</h3>
+            <p>
+              Ваша роль будет состоять в планировании, координации и управлении
+              всеми аспектами проекта, начиная от определения целей и задач, до
+              контроля над бюджетом и сроками выполнения. Мы ищем кандидата с
+              высоким уровнем организации, лидерскими навыками и способностью
+              эффективно работать в команде.
+            </p>
+            <button onclick="gotoContact()" class="button-cover" role="button">
+              <span class="text">Откликнуться?</span><span>Откликнуться!</span>
+            </button>
+          </div>
+          <div class="vacancy-grid-element">
+            <h2>Старший программист</h2>
+            <h1>150 000 - 175 000 ₽</h1>
+            <h3>Опыт от 2 лет</h3>
+            <p>
+              Ваша экспертиза и опыт будут неоценимы для команды разработки, а
+              ваш лидерский потенциал поможет вести проекты вперед и достигать
+              поставленных целей. Мы предлагаем возможность работать с новейшими
+              технологиями, участвовать в интересных проектах и принимать
+              активное участие в стратегическом развитии компании.
+            </p>
+            <button onclick="gotoContact()" class="button-cover" role="button">
+              <span class="text">Откликнуться?</span><span>Откликнуться!</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <aside class="aside-container">
+        <div class="aside-container-content"><h1>Как нас найти?</h1></div>
+        <div class="aside-container-map">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f5fc06c4569ab90ba8af6b9175925285164c77fde6f474e5754f089ea89ab73&amp;width=612&amp;height=448&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+        <div class="aside-container-content">
+          <h2>Адреса:</h2>
+          <p>
+            Моско́вский Кремль, Москва, 103132 <br />
+            Собор Святого Петра, Piazza San Pietro, 00120 Città del Vaticano,
+            Ватикан <br />
+            Аэропорт «Валёк», Норильск, Красноярский край, 663308
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_bkg">
+        <div class="container">
+          <div class="footer_wrapper">
+            <div class="footer-copyright">
+              <p>Copyright © «Lorem Juice»</p>
+            </div>
+            <div class="footer-contact">
+              <p>Номер представителя</p>
+              <a href="tel:89266539521" class="footer-number"
+                >8(926) 653 95-21</a
+              >.
+            </div>
+            <div class="footer-contact">
+              <p>Почта представителя</p>
+              <a href="mailto:mrfelsgc@gmail.com" class="footer-number"
+                >mrfelsgc@gmail.com</a
+              >
+            </div>
+            <div class="footer-disclaimer">
+              <p class="footer-disclaimer-text">
+                ООО Lorem Juice Co. полный отказ от ответственности. Все расходы
+                в случае травмы, смерти и повреждения имущества полностью
+                покрываются за счёт сотрудника.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="vacancy.js"></script>
+  </body>
+</html>
