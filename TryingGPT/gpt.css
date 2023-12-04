@@ -230,7 +230,7 @@ nav ul li a {
 
   transition: all 1.5s ease;
   transform: scale(0.8);
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .card.active {
@@ -245,7 +245,7 @@ nav ul li a {
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .card h2 {
   position: relative;
@@ -345,7 +345,7 @@ nav ul li a {
 .footer-number {
   font-size: 20px;
   font-weight: 900;
-  color: #000000;
+  color: black;
 }
 .footer-disclaimer-text {
   font-size: 14px;
