@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="LoremJuiceCo." />
+    <!--**имя автора-->
+    <meta
+      name="description"
+      content="Производитель сока номер один в России!"
+    />
+    <!--**описание сайта-->
+    <meta
+      name="keywords"
+      content="juice, juice co, lorem juice, сок, сок лорем, лорем сок ко"
+    />
+    <!--**ключевые слова-->
+    <link rel="icon" type="image/jpg" href="/" />
+    <link rel="stylesheet" href="login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cta-form">
+        <h2>Связаться с нами!</h2>
+      </div>
+      <form id="form">
+        <div>
+          <input type="text" placeholder="Имя" class="form__input" id="name" />
+          <label for="name" class="form__label">Имя</label>
+        </div>
+
+        <div>
+          <input
+            type="email"
+            placeholder="Email"
+            class="form__input"
+            id="email"
+          />
+          <label for="email" class="form__label">Email</label>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            placeholder="Тема"
+            class="form__input"
+            id="subject"
+          />
+          <label for="subject" class="form__label">Тема</label>
+        </div>
+        <div class="submit_btn_container">
+          <input value="Отправить" сlass="submit_btn" type="submit" />
+        </div>
+      </form>
+    </div>
+    <div id="overlay">
+      <div class="message-container">
+        <h1>Спасибо за ваше обращение!</h1>
+        <h2>Ожидайте ответа в близжайшее время</h2>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

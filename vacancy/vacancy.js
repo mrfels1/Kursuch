@@ -1,3 +1,3 @@
 function gotoContact() {
-  location.href = "/contact/contact.html";
+  location.href = "/Login/login.html";
 }
