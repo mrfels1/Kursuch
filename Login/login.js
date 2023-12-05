@@ -17,7 +17,7 @@ function fade() {
     }, 20);
   } else {
     setTimeout(function () {
-      window.location.href = "Kursuch/index.html";
+      window.location.href = "/index.html";
     }, 5000);
   }
   document.getElementById("overlay").style.opacity = opacity;
