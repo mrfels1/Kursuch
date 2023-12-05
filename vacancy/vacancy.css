@@ -97,6 +97,10 @@ nav ul li a {
 /*button*/
 
 .button-cover {
+  margin-top: 20px;
+  text-align: center;
+  height: 50px;
+  width: 200px;
   position: relative;
   overflow: hidden;
   border: 1px solid #18181a;
