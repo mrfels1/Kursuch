@@ -19,10 +19,8 @@ function fade() {
     setTimeout(function () {
       const currentUrl = window.location.href;
       if (currentUrl == "https://mrfels1.github.io/Kursuch/login.html") {
-        alert(currentUrl);
         window.location.href = "https://mrfels1.github.io/Kursuch";
       } else {
-        alert(currentUrl);
         window.location.href = "/";
       }
     }, 5000);
