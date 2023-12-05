@@ -17,7 +17,12 @@ function fade() {
     }, 20);
   } else {
     setTimeout(function () {
-      window.location.href = "/index.html";
+      const currentUrl = window.location.href;
+      if (currentUrl == "https://mrfels1.github.io/Kursuch/login.html") {
+        window.location.href = "https://mrfels1.github.io/Kursuch";
+      } else {
+        window.location.href = "/";
+      }
     }, 5000);
   }
   document.getElementById("overlay").style.opacity = opacity;
