@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed);
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Fira Sans Condensed";
   margin: 0px;
@@ -62,16 +65,9 @@ div[id^="section"] {
   z-index: -1;
 }
 
-.first {
-}
-.second {
-}
 .third {
   object-position: 0% 75%;
 }
-.fourth {
-}
-
 .about_first {
   justify-content: right;
 }
@@ -242,14 +238,18 @@ div[id^="section"] {
 /*sections end*/
 /*header*/
 header {
+  line-height: 1.6;
   background: #333;
   color: #fff;
   padding: 1rem;
+  margin: 0px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav ul li {
