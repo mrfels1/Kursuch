@@ -97,8 +97,9 @@ nav ul li a {
   color: rgb(0, 0, 0);
   z-index: 2;
 }
+
 #white_1 p {
-  font-family: "Dank Mono", ui-monospace, monospace;
+  font-family: "Fira Sans Condensed";
   font-size: 20px;
   padding: 20px;
   color: rgb(69, 69, 69);
@@ -110,6 +111,7 @@ nav ul li a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 2;
+  text-align: justify;
 }
 
 .about:hover {
