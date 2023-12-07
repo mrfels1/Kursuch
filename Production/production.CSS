@@ -307,8 +307,8 @@ nav ul li a {
     padding-left: 10px;
   }
   .white p {
-    margin-top: 5px;
-    padding: 10px;
-    font-size: 28px;
+    margin-top: 0px;
+    padding: 5px;
+    font-size: 26px;
   }
 }
