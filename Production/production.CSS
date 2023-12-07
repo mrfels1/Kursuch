@@ -260,3 +260,55 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
 }
+
+@media screen and (max-width: 450px) {
+  .about {
+    width: 100%;
+    height: 580px;
+    margin: 0px;
+    border-radius: 0px;
+  }
+  .about_first .about:hover {
+    transition: all 1s ease;
+    margin-right: 0px;
+    transform: scale(1);
+  }
+
+  .about_second .about:hover {
+    transition: all 1s ease;
+    margin-left: 0px;
+    transform: scale(1);
+  }
+
+  .about_third .about:hover {
+    transition: all 1s ease;
+    margin-right: 0px;
+    transform: scale(1);
+  }
+
+  .about_fourth .about:hover {
+    transition: all 1s ease;
+    margin-left: 0px;
+    transform: scale(1);
+  }
+  header {
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    & ul {
+      & li {
+        margin-right: 5px;
+      }
+    }
+  }
+  .white h2 {
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .white p {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 30px;
+  }
+}

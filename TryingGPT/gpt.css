@@ -74,6 +74,11 @@ nav ul li a {
   transition: all 1s ease;
 }
 
+.about:hover {
+  transition: all 1s ease;
+  margin-left: 200px;
+  transform: scale(1.1);
+}
 #white_1 {
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
@@ -112,12 +117,6 @@ nav ul li a {
   -webkit-text-fill-color: transparent;
   z-index: 2;
   text-align: justify;
-}
-
-.about:hover {
-  transition: all 1s ease;
-  margin-left: 200px;
-  transform: scale(1.1);
 }
 
 /* Animations */
@@ -353,4 +352,96 @@ nav ul li a {
   font-size: 14px;
   font-weight: 200;
   max-width: 250px;
+}
+
+@media screen and (max-width: 450px) {
+  .about-container {
+    width: 100%;
+  }
+  .about {
+    width: 100%;
+  }
+  .about:hover {
+    margin-left: 0px;
+    transform: scale(1);
+  }
+  #white_1 {
+    width: 100%;
+  }
+
+  .footer {
+    margin: 0px;
+    & .container {
+      padding: 0px;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+  }
+  .footer_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+  }
+  .footer-disclaimer-text {
+    font-size: 10px;
+  }
+  #white_1 {
+    left: 0px;
+    & h2 {
+      font-size: 20px;
+      padding: 10px;
+    }
+    & p {
+      font-size: 17px;
+      padding: 10px;
+    }
+  }
+
+  header {
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    & ul {
+      & li {
+        margin-right: 5px;
+      }
+    }
+  }
+  .carousel2-container {
+    height: 84vh;
+  }
+  .prev,
+  .next {
+    border-radius: 10px;
+    font-size: 17px;
+    width: 30px;
+    height: 74vh;
+    background-color: #3e3e3e00;
+    border: #33333300;
+  }
+  .prev {
+    left: 0px;
+  }
+  .next {
+    right: 0px;
+  }
+  .card.active h2 {
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  .card h2 {
+    font-size: 20px;
+  }
+  .card {
+    margin: 0 0px;
+  }
+  .hero {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-container img {
+    top: 125%;
+  }
 }
